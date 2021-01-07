@@ -1,26 +1,19 @@
 {
     "Employee": {
-        "name": {
-            "name": "string",
-            "surname": "string"
-        },
+        "name": "string",
+        "surname": "string",
         "insuranceID": "int",
         "employeeNr": "int",
         "registered": "Customer[]"
     },
     "Customer": {
-        "name": {
-            "name": "string",
-            "surname": "string"
-        },
+        "name": "string",
         "surname": "string",
         "customerNr": "int",
         "licenseNr": "int",
-        "address": {
-            "street": "string",
-            "postalCode": "string",
-            "doorNr": "int"
-        },
+        "street": "string",
+        "postalCode": "string",
+        "doorNr": "int",
         "has": "DrivingLicense[]",
         "registeredBy": "Employee"
     },
