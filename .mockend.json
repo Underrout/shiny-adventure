@@ -1,0 +1,52 @@
+{
+    "Employee": {
+        "name": {
+            "name": "string",
+            "surname": "string"
+        },
+        "insuranceID": "int",
+        "employeeNr": "int",
+        "registered": "Customer[]"
+    },
+    "Customer": {
+        "name": {
+            "name": "string",
+            "surname": "string"
+        },
+        "surname": "string",
+        "customerNr": "int",
+        "licenseNr": "int",
+        "address": {
+            "street": "string",
+            "postalCode": "string",
+            "doorNr": "int"
+        },
+        "has": "DrivingLicense[]",
+        "registeredBy": "Employee"
+    },
+    "DrivingLicense": {
+        "ID": "int",
+        "abbreviation": "string",
+        "limitingValue": "int",
+        "description": "string",
+        "assigned": "Vehicle[]"
+    },
+    "Vehicle": {
+        "uniqueChassisNr": "int",
+        "brand": "string",
+        "licensePlateType": "string",
+        "extras": "string[]",
+        "model": "string",
+        "licensePlate": "string",
+        "displacement": "int",
+        "enginePower": "int",
+        "mileage": "int"
+    },
+    "Rent": {
+        "processedBy": "Employee",
+        "rentedBy": "Customer",
+        "rented": "Vehicle",
+        "date": "date",
+        "price": "int"
+    }
+}
