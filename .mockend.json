@@ -12,7 +12,7 @@
         "customerNr": "int",
         "licenseNr": "int",
         "street": "string",
-        "postalCode": "string",
+        "postalCode": "int",
         "doorNr": "int",
         "has": "DrivingLicense[]",
         "registeredBy": "Employee"
